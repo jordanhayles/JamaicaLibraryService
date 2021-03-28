@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<title>Home Page</title> <!--name of document-->
+<link rel="stylesheet" href="Style.css"><!--linking the css page to apply to this html document-->
+
+<img src="Library.png" width="180" height="180"> <img src="logo.png" width="150" height="150" align="right">
+<script>
+function Viewbook()<!--Name of function viewbook-->
+{
+var user= document.forms["Login"]["username"].value;<!--validation is taking place-->
+var pass=document.forms["Login"]["password"].value;
+if(user=="")
+{
+alert("You're registered.");
+return false;
+}
+if (pass=="")
+{
+alert("Password is required to Login");
+return false;
+}
+}
+</script>
+<body>
+
+
+<ul> <!--navigation bar used to access other html pages-->
+<li><a class="active"href="Homepage.html">Home</a></li>
+<li><a href="About.html">About Us</a></li>
+<li><a href="Register.html">Registration</a></li>
+<li><a href="Tour.html">Tour</a></li>
+</ul>
+
+
+<br>
+<br>
+
+<div style="background-color:#FFFF66; width:300px"><!--div is used for seperating-->
+<form name="Login" action="Display.html" method="get" onsubmit="return Viewbook()"><!--script above is validating the login form-->
+<table>
+<tr>
+<th colspan="2">Please login to view book information:</th>
+</tr>
+<tr>
+<td>Username:</td><br><td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Password:</td><br><td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td><input type="submit" name="Login" value="Login"></td>
+<td><a href="Register.html">create an account</a></td>
+</tr>
+</table>
+</form>
+</div>
+<br>
+
+<div style="background-color:#FFFF66;width:830px;height:420px">
+<table width="820px">
+<tr>
+<td>
+<p>
+<img src="lin.jpg"width="250" height="250"><br><br> Thank you for visiting our website.Please sign up to access our books as well as edownloads and  many more. Whether child or adult, a library is available for everyone. To sign up please<a href="Register.html"> click here</a>
+</p>
+</td>
+<td>
+<p ><img src="History.jpg"width="250" height="250"><br><br>
+When was the Jamaica Library Service established? How many parish libraries do we have? Find out more information about us. <a href="About.html">click here</a></p>
+</td>
+<td>
+<p><b>Contact Us</b><br><br><b>Telephone:</b> (876)-908-7756<br>(876)-976-3412<br><br><br><b>Email:</b> Jamaicalibraryedu@gmail.com<br>Jlseducation@yahoo.com</p>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+<br>
+<br>
+<footer style="font-size:100%;text-align:center" >Copyright &copy;2017 Hayles WebDesigns Ltd</footer> <!--footer displaying company name and year-->
+</html>

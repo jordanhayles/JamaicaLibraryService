@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text]{
+width:100%;
+border:1pxsolid #aaa;
+margin:8px 0;
+}
+</style>
+
+<title>Register</title>
+<link rel="stylesheet" href="Style.css">
+
+<img src="Library.png"width="180" height="180"><img src="logo.png" width="150" height="150" align="right">
+<script>
+function Register1()<!--name of function 'Register1'-->
+{
+var user= document.forms["Registration"]["Username"].value;<!--declaring of variables when validating a form-->
+var First=document.forms["Registration"]["Firstname"].value;
+var Last=document.forms["Registration"]["Lastname"].value;
+var Gender=document.forms["Registration"]["Gender"].value;
+var Parish=document.forms["Registration"]["Parish"].value;
+var Age=document.forms["Registration"]["Age"].value;
+var Mobile=document.forms["Registration"]["Mobile"].value;
+var Email=document.forms["Registration"]["Email"].value;
+var Password=document.forms["Registration"]["Password"].value;
+var Conpass=document.forms["Registration"]["Confirmpass"].value;
+
+if(user=="")
+{alert("Username field cannot be empty");<!--error message-->
+return false;
+}
+if(First=="")
+{alert("Firstname field cannot be empty");
+return false;
+}
+if(Last=="")
+{alert ("Lastname field cannot be empty");
+return false;
+}
+if(Gender=="")
+{alert("Gender selection is required");
+return false;
+}
+if(Parish=="")
+{alert("Parish selection is required:");
+return false;
+}
+if (Age<6||Age>65)
+{alert("You must be 6-65 years old to register");
+return false;}
+ if(Mobile<7)
+{alert("Digits should be no less than 7");
+return false;
+}
+if (Email=="")
+{alert("Email field cannot be empty");
+return false;
+}
+if (Password=="")
+{alert("Password field cannot be empty");
+return false;
+}
+if(Conpass==Password)
+{alert("Registration is completed. Please check your email.");
+return false;
+}
+else {alert("Password not matched");
+return false;
+}
+}
+</script>
+
+<body>
+<ul>
+<li><a href="Homepage.html">Home</a></li>
+<li><a href="About.html">About Us</a></li>
+<li><a class="active" href="Register.html">Registration</a></li>
+<li><a href="Tour.html">Tour</a></li>
+</ul>
+
+<br>
+<br>
+<div style="background-color:#FFFF66;width:1200px;height:275px" >
+<h1 align="center">Registration Form</h1>
+<form name="Registration" onsubmit="return Register1()">
+<table height="200" width="1100">
+<tr>
+<td>Username</td><td><input type="text" name="Username"></td>
+<td>First Name</td><td><input type="text" name="Firstname"></td>
+<td>Last Name</td><td><input type="text" name="Lastname"></td>
+<td>Gender</td><td><input type="radio" name="Gender" value="Male">Male<br><input type="radio" name="Gender" value="Female">Female </td>
+<td>Parish</td><td><select name="Parish"> 
+<option name="Kingston">Kingston </option>
+<option name="St.Andrew">St.Andrew</option>
+<option name="St.Catherine">St.Catherine</option>
+<option name="St.Thomas">St.Thomas</option>
+ </select></td>
+</tr>
+<tr>
+<td>Age</td><td><input type="text" name="Age"></td>
+<td>Mobile</td><td><input type="text" name="Mobile"></td>
+<td>Email</td><td><input type="text" name="Email"></td>
+<td>Password</td><td><input type="password" name="Password"></td>
+<td>Confirm Password</td><td><input type="password" name="Confirmpass"></td>
+</tr>
+<tr><td><input type="submit" name="regis" value="Register"> </td>
+<td><a href="Homepage.html"><input type="button" name="cancel" value="Return to Home"></a></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+<br>
+<br>
+<br>
+<br>
+<footer style="font-size:100%;text-align:center" >Copyright &copy;2017 Hayles WebDesigns Ltd</footer>
+</html>

@@ -1,0 +1,158 @@
+<html>
+<title>Display Page</title>
+
+
+<img src="Library.png"width="180" height="180"><img src="logo.png" width="150" height="150" align="right">
+  <!--css style use to design background and book view table-->
+<style>                               
+body{background-color:#C3FDB8;
+background: url(back.jpg);
+background-size: 1880px 1880px;
+background-repeat: no-repeat;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+th{ background-color:#FFFF66;
+          }
+	footer{
+	
+	background-color:#FFFF66;
+	height:30px;                                    
+	
+}   <!--table elements in css-->
+</style>
+<body>
+<br><script>
+document.write(Date());<!--a javascript code to know the date-->
+</script>
+<br>
+<div style="background-color:#FFFF66; width:300px">
+<B>Welcome </B><a href="Homepage.html"><input type="button" name="Logout" value="Logout"></a><br><!--users can log out-->
+  
+<br>
+Enter Value<input type="text" name="Search"><!--search for book information-->
+ <input type="button" name="searchbtn" value="Search">
+ </div>
+ <a href="#c1">Download ebooks below</a><!--uses id to send the user directly to the located section-->
+ 
+<table style="width:90%; background-color:white">
+<br>
+<br>
+<caption><b>Available Books On Loan</b></caption>
+<tr>
+<th>ISBN</th>
+<th>Picture</th>
+<th>Title</th>
+<th>Author</th>
+<th>Publisher</th>
+<th>Summary</th>
+</tr>
+<tr>
+<td>9780448089010</td>
+<td> <img src="Hardy.jpg" width="150" height="150"></td>
+<td>The Hardy Boys: Tower Treasure</td>
+<td>Franklin W. Dixon</td>
+<td>Grosset & Dunlap</td>
+<td><p>The story begins with Frank and Joe Hardy barely avoiding being hit by a speeding driver, who they notice has bright red hair. 
+Later, this same red-haired driver attempts a ferry boat ticket office robbery and successfully steals a yellow jalopy called Queen from
+ the Hardys' friend, Chet Morton. Due to one witness reporting that the villain had dark hair, the Hardys assume he is using a red wig.
+ It is learned that the thief returned to Chet's home to steal a tire, helping Frank and Joe to find Queen abandoned in a public wooded area.<p></td>
+</tr>
+<tr>
+<td>9780448095042</td>
+<td><img src="Nancy.jpg" width="150" height="150"></td>
+<td>Nancy Drew: The Mystery at Lilac Inn</td>
+<td> Carolyn Keene</td>
+<td>Grosset & Dunlap</td>
+<td><p>The story involves Nancy Drew helping her friend Emily Crandall find out who stole her heirloom jewels. Emily's aunt and guardian, 
+Hazel Willoughby, unwisely removes them from a safe deposit box and carries them with her while lunching at Lilac Inn, only to have her 
+handbag stolen while the diners are distracted. In the meantime, Nancy must hire a temporary maid in the absence of Mrs. Gruen, her housekeeper.
+ Nancy uncovers the thief, Mary Mason, one of the applicants for the position of maid. She then tracks Mary Mason to a gang, which includes 
+ Mary's brother, Bud. Nancy is bound and gagged and left aboard the gang's sinking cabin cruiser to die, but is rescued by the river patrol.</p></td>
+</tr>
+<tr>
+<td>9789766380915</td>
+<td><img src="English.jpg" width="150" height="150"> </td>
+<td>Carlong English A for CSEC With Study Guide</td>
+<td>Keith Noel & others </td>
+<td>Carlong </td>
+<td><p>It gives a detailed analysis of the requirements of the examination and the literary skills students need to perform well. Students
+ are guided in the techniques of writing to give pleasure, to inform, or to persuade. The guide also discusses and demonstrates literary analysis
+ of poems, drama and prose extracts. Worked examples take students through the process of answering specific questions. Every student preparing for
+ the English A examination needs to have a copy.</p> </td>
+</tr>
+<tr>
+<td>9789766481339 </td>
+<td><img src="Maths.jpg" width="150" height="150"> </td>
+<td>A Complete Mathematics Course Vol 2 </td>
+<td>Raymond Toolsie </td>
+<td>Caribbean Educational Publishers </td>
+<td>
+<ul>
+  <li>A #1 recommended CSEC Mathematics Book</li>
+  <li>Contains:
+    <ul>
+    <li>Past paper questions</li>
+    <li>Answer Sheets</li>
+    </ul>
+  </li>
+  <li>This is a very helpful book to students who have challenges with maths. It also deals with the preparation for CSEC.</li>
+</ul> 
+</td>
+</tr>
+<tr>
+<td> 9781480554382 </td>
+<td><img src="Ben.jpg" width="150" height="150">  </td>
+<td>Ben Carson: Gifted Hands </td>
+<td> Ben Carson</td>
+<td>Zondervan Books </td>
+<td><p>Gifted Hands by and about Ben Carson, M.D., is the inspiring story of an inner-city kid with poor grades and little motivation, who, at age thirty-three,
+ became director of pediatric neurosurgery at Johns Hopkins University Hospital. Gifted Hands will transplace you into the operating room to witness surgeries
+ that made headlines around the world, and into the private mind of a compassionate, God-fearing physician who lives to help others.</p> </td>
+</tr>
+</table>
+<table style="width:90%; background-color:white">
+<br>
+<br>
+<caption id="c1"><b>Ebooks for Download</b></caption>
+<tr>
+<th>ISBN</th>
+<th>Picture</th>
+<th>Title</th>
+<th>Author</th>
+<th>Publisher</th>
+<th>Summary</th>
+<th>Download</th>
+</tr>
+<tr>
+<td> 9780692613061</td>
+<td><img src="Dead.jpg" width="150" height="150"> </td>
+<td>Dead Wake</td>
+<td>Dawn Lee Mckenna</td>
+<td>Sweet Tea Press</td>
+<td><p>When the local florists find a dead guy in their wall, it opens up a decades-old missing persons case. 
+It also opens up a Pandora's box of secrets - secrets that might have ramifications for Sheriff's Office investigator Maggie Redmond.</p></td>
+<td><a href="https://www.bookbub.com/books/dead-wake-by-dawn-lee-mckenna?ebook_deal" target="_blank">Download Dead Wake</a></td><!--target carries the user to a new window-->
+</tr>
+<tr>
+<td>9781945879180</td>
+<td><img src="Christ.jpg" width="150" height="150"></td>
+<td>Christmas at the Castle</td>
+<td>Melissa McClone</td>
+<td>Tule Publishing</td>
+<td>A European getaway during the Christmas holiday is exactly what veterinarian Katrina “Kat” Parsons needs. She can’t wait to be a 
+bridesmaid in her childhood friend’s royal wedding, but she hopes to steer clear of the bride’s arrogant older brother.</td>
+<td><a href="https://www.bookbub.com/books/christmas-at-the-castle-by-melissa-mcclone?ebook_deal" target="_blank">Download Christmas at the Castle </a></td>
+</tr>
+
+</table>
+
+</body>
+
+<footer style="font-size:100%;text-align:center" >Copyright &copy;2017 Hayles WebDesigns Ltd</footer>
+</html>
